@@ -1,0 +1,25 @@
+@startuml
+
+Point +-- MyOwnLinkedList
+
+class MyOwnLinkedList {
+- Point headPoint
+- int numberOfPoints
+
++ __constructor MyOwnLinkedList(Object data)
++ void add(int index, Object data)
++ void addFirst(Object data)
++ Point get(int index)
++ void printList()
+}
+
+class Point {
+- Point: nextPoint
+- Object: data
+
++ __constructor Point(Object data)
++ Object getData()
+}
+
+
+@enduml
